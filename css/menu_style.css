@@ -1,0 +1,207 @@
+#aast-menu{
+    background-color: #880000;
+}
+.menu
+{
+    background-color: #880000;
+    margin:auto;
+	padding:0px;
+	font-family: Tahoma, "Lucida Grande", Verdana, "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", Helvetica, sans-serif;
+    font-family: 'Museo','Museo500','Helvetica Neue','HelveticaNeue','Helvetica',Arial;
+	font-size:12px;
+	font-weight:normal;
+    clear: both;
+    text-align: justify;
+    height: 30px;
+}
+
+.menu *{
+    display:inline;
+}
+
+.menu span{
+    display:inline-block;
+    height:0;
+    width:100%;
+    position: relative;
+}
+
+.menu ul.menu-list
+{
+	background:#880000;
+	height:35px;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.menu li.menu-listItem{
+	float:left;
+	padding:0px;
+    width:auto;
+}
+.menu li.menu-listItem a{
+    background:#880000;
+    width:auto;
+    color: #f7f7f7;
+	display:block;
+	font-weight:bold;
+	line-height:35px;
+	margin:0px;
+	padding:0px 13px;
+	text-align:center;
+	text-decoration:none;
+    border-top: 2px solid #880000;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.menu li.menu-listItem a:hover, .menu ul.menu-list li.menu-listItem:hover a
+{
+	background-color: #ffffff;
+	color:#880000;
+	text-decoration:none;
+    border-top: 2px solid orange;
+}
+
+.menu li.menu-listItem ul.sub-list
+{
+	background:#fff;
+    display:none;
+	height:auto;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	position:absolute;
+	width:225px;
+	z-index:200;
+}
+
+.menu li.sub-listItem a{
+	color:#000;
+	display:block;
+	font-weight:normal;
+	line-height:30px;
+	margin:0px;
+	padding:0px 8px;
+	text-align:left;
+	text-decoration:none;
+}
+
+.menu li.menu-listItem:hover ul.sub-list
+{
+	display:block;
+    padding:5px;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+    
+.menu li.menu-listItem li.sub-listItem
+{
+    color: #000;
+	display:block;
+	float:none;
+	margin:0px;
+	padding:0px;
+	width:225px;
+}
+.menu li.menu-listItem:hover li.sub-listItem a
+{
+	background:none;
+    border-top: 1px dotted #CCC;
+}
+    
+   	.menu li.menu-listItem ul.sub-list a
+    {
+		display:block;
+		height:30px;
+		font-size:11px;
+		font-style:normal;
+		margin:0px;
+		padding:0px 10px 0px 15px;
+		text-align:left;
+        border: 1px solid #fff;
+	}
+	.menu li.menu-listItem ul.sub-list a:hover, .menu li.menu-list ul.sub-list li.sub-listItem:hover a
+    {
+		background:#880000;
+        border: none;
+		padding:0px 10px 0px 15px;
+        border-top:2px solid orange;
+		color:#ffffff;
+		text-decoration:none;
+	}
+
+
+
+ul.MenuBarHorizontal iframe
+{
+	position: absolute;
+	z-index: 1010;
+	filter:alpha(opacity:0.1);
+}
+/* HACK FOR IE: to stabilize appearance of menu items; the slash in float is to keep IE 5.0 from parsing */
+@media screen, projection
+{
+	ul.MenuBarHorizontal li.MenuBarItemIE
+	{
+		display: inline;
+		float: left;
+		background: #FFF;
+	}
+}
+
+#aast-search{
+    background-color: #880000;
+    position:relative;
+    margin:auto;
+    vertical-align: baseline;
+    padding-top: 8px;
+    padding-right:3px;
+}
+
+#aast-search #search-box .text
+{
+    border: none;  
+}
+
+.text{
+    background-image: url('../media/images/commons/bg-search.jpg');
+}
+
+
+/* Navigation : top black navbar
+-------------------------------------------------------------- */
+#navcontainer-one { 
+    font-family: Georgia, Verdana, Cantarell, Ariel, Tahoma;
+   	font-family: Ariel, Tahoma, Verdana, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	padding: 6px 0 4px 10px; 
+    float: right;
+}	
+ul#navbar-one {
+	text-align: right; 
+}
+#navbar-one li {
+	display: inline;
+	list-style-type: none;
+}
+#navbar-one a { 
+	padding: 2px 13px 4px;
+	font-size: .68em;
+	color: #fff; /* font-weight: bold; */
+	text-decoration: none;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px 1px #fff;
+    letter-spacing: 1px;
+    vertical-align: baseline;
+    background: none repeat scroll 0 0 transparent;
+    outline: 0 none;
+    text-shadow: 0px 1px 3px rgba(255,150,150,0.3);  
+}		
+#navbar-one a:hover {
+    
+	color: #eec642;
+    text-shadow: 0px 1px 3px rgba(210,183,95,0.4);
+    font-weight: normal;
+	text-decoration: underline;
+	cursor: pointer;
+}

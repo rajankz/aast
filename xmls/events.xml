@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events base_image="http://localhost/aast-htdocs/media/images/commons/base-event-image.jpg">
+	<OneEvent>
+		<title>Event one next month and this month we try the next month event for fun</title>
+		<link_name>event1</link_name>
+		<event_date>10/23/2011</event_date>
+		<posting_date>07/28/2011</posting_date>
+		<expire_date>12/21/2011</expire_date>
+		<content>
+		<![CDATA[
+			<p>This is event 1. Nothing more is provided</p>
+		]]>
+		</content>
+	</OneEvent>
+	<OneEvent>
+		<title>Event two next month</title>
+		<link_name>event2</link_name>
+		<event_date>11/25/2011</event_date>
+		<posting_date>07/28/2011</posting_date>
+		<expire_date>12/21/2011</expire_date>
+		<content>
+		<![CDATA[
+			<p>This is event 2. Nothing more is provided</p>
+		]]>
+		</content>
+	</OneEvent>
+		<OneEvent>
+		<title>Event two next ang again next month</title>
+		<link_name>event2</link_name>
+		<event_date>11/25/2011</event_date>
+		<posting_date>07/28/2011</posting_date>
+		<expire_date>12/21/2011</expire_date>
+		<content>
+		<![CDATA[
+			<p>This is event 2. Nothing more is provided</p>
+		]]>
+		</content>
+	</OneEvent>
+		<OneEvent>
+		<title>Event two next ang again next month</title>
+		<link_name>event2</link_name>
+		<event_date>11/25/2011</event_date>
+		<posting_date>07/28/2011</posting_date>
+		<expire_date>12/21/2011</expire_date>
+		<content>
+		<![CDATA[
+			<p>This is event 2. Nothing more is provided</p>
+		]]>
+		</content>
+	</OneEvent>
+		<OneEvent>
+		<title>Event two next ang again next month</title>
+		<link_name>event2</link_name>
+		<event_date>11/25/2011</event_date>
+		<posting_date>07/28/2011</posting_date>
+		<expire_date>12/21/2011</expire_date>
+		<content>
+		<![CDATA[
+			<p>This is event 2. Nothing more is provided</p>
+		]]>
+		</content>
+	</OneEvent>
+		<OneEvent>
+		<title>Event two next ang again next month</title>
+		<link_name>event2</link_name>
+		<event_date>11/25/2011</event_date>
+		<posting_date>07/28/2011</posting_date>
+		<expire_date>12/21/2011</expire_date>
+		<content>
+		<![CDATA[
+			<p>This is event 2. Nothing more is provided</p>
+		]]>
+		</content>
+	</OneEvent>
+		<OneEvent>
+		<title>Event two next ang again next month</title>
+		<link_name>event2</link_name>
+		<event_date>11/25/2011</event_date>
+		<posting_date>07/28/2011</posting_date>
+		<expire_date>12/21/2011</expire_date>
+		<content>
+		<![CDATA[
+			<p>This is event 2. Nothing more is provided</p>
+		]]>
+		</content>
+	</OneEvent>
+		<OneEvent>
+		<title>Event two next ang again next month</title>
+		<link_name>event2</link_name>
+		<event_date>11/25/2011</event_date>
+		<posting_date>07/28/2011</posting_date>
+		<expire_date>12/21/2011</expire_date>
+		<content>
+		<![CDATA[
+			<p>This is event 2. Nothing more is provided</p>
+		]]>
+		</content>
+	</OneEvent>
+		<OneEvent>
+		<title>Event two next ang again next month an</title>
+		<link_name>event2</link_name>
+		<event_date>11/25/2011</event_date>
+		<posting_date>07/28/2011</posting_date>
+		<expire_date>12/21/2011</expire_date>
+		<content>
+		<![CDATA[
+			<p>This is event 2. Nothing more is provided</p>
+		]]>
+		</content>
+	</OneEvent>
+</Events>

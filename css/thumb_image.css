@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+.image_thumb {
+    float: left;
+    width: 120px;
+    background: #f0f0f0;
+    /*border-right: 1px solid #fff;
+    /*border-top: 1px solid #ccc;*/
+}
+.image_thumb img {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #fff;
+    float: left;
+}
+.image_thumb ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.image_thumb ul li{
+    margin: 0;
+    padding: 10px 10px;
+    background: #f0f0f0 url(./nav_a.gif) repeat-x;
+    width: 102px;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    /*border-top: 1px solid #fff;*/
+    border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.image_thumb ul li.hover { /*--Hover State--*/
+    background: #ddd;
+    cursor: pointer;
+}
+.image_thumb ul li.active { /*--Active State--*/
+    background: #999;
+    cursor: default;
+}
+html .image_thumb ul li h2 {
+    font-size: 1em;
+    margin: 5px 0;
+    padding: 0;
+}
+.image_thumb ul li .block {
+    float: left;
+    margin-left: 3px;
+	margin-top: 5px;
+    padding: 0;
+    width: 82px;
+	height: 25px;
+}
+.image_thumb ul li p{display: none;}/*--Hide the description on the list items--*/
+
+.image_thumb ul li readmore{display: none;}
