@@ -1,6 +1,7 @@
 <!DOCTYPE html >
 <?php
-$GLOBALS['AAST_ROOT_PATH'] = "http://localhost/aast-htdocs";
+$GLOBALS['AAST_ROOT_PATH'] = "http://localhost/~aast/aast";
+$GLOBALS['selected-menu'] = "about";
 //$GLOBALS['AAST_ROOT_PATH'] = "rajanzachariah.com/aast";
 ?>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -32,8 +33,9 @@ $GLOBALS['AAST_ROOT_PATH'] = "http://localhost/aast-htdocs";
 <script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui-1.8.16.custom.min.js"></script>
 <script type="text/javascript" src="../js/xbreadcrumbs.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
 
-<link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="../css/fonts.css" type="text/css" charset="utf-8" />
 <link rel="shortcut icon" href="../favicon.ico" />
 <link rel="stylesheet" href="http://www.umd.edu/wrapper/css/xhtml-962px.css" />
 <link rel="stylesheet" href="../css/menu_style.css" type="text/css" />
@@ -80,9 +82,12 @@ $GLOBALS['AAST_ROOT_PATH'] = "http://localhost/aast-htdocs";
             </div>
 			
             <div id="content" class="shadow">
-				<div><?php include('../backlinks.php') ?></div>
-				<?php include('about-menu.php') ?>
-				<div class="right-module"></div>
+				<div><?php //include('../backlinks.php') ?></div>
+				<div class="left-module">
+				<?php include('about-menu.php') ?></div>
+				<div class="right-module">
+					<?php include('about-content.php') ?>
+				</div>
 
             </div>
             <div id="footer"></div>

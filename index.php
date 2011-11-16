@@ -1,7 +1,10 @@
 <!DOCTYPE html >
 <?php
-$GLOBALS['AAST_ROOT_PATH'] = "http://localhost/~bluemac/aast";
+$GLOBALS['AAST_ROOT_PATH'] = "http://localhost/~aast/aast";
 //$GLOBALS['AAST_ROOT_PATH'] = "rajanzachariah.com/aast";
+
+if($_GET["page"]=="mission")
+
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -11,6 +14,7 @@ $GLOBALS['AAST_ROOT_PATH'] = "http://localhost/~bluemac/aast";
 <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
 <script type="text/javascript" src="lib-external/nivo-slider/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 
 
 <script type="text/javascript">
@@ -37,12 +41,12 @@ $GLOBALS['AAST_ROOT_PATH'] = "http://localhost/~bluemac/aast";
 <meta name="document-state" content="Dynamic" />
 <meta http-equiv="Content-Language" content="EN-US" />
 
-<link rel="stylesheet" href="fonts.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
 <link rel="shortcut icon" href="./favicon.ico" />
 <link rel="stylesheet" href="http://www.umd.edu/wrapper/css/xhtml-962px.css" />
-<link rel="stylesheet" href="./css/menu_style.css" type="text/css" />
-<link rel="stylesheet" href="./css/style.css" type="text/css" />
-<link rel="stylesheet" href="./css/jquery-ui-1.8.16.custom.css" type="text/css" />
+<link rel="stylesheet" href="css/menu_style.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" />
 
 <link rel="stylesheet" href="lib-external/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="lib-external/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
@@ -92,7 +96,10 @@ $GLOBALS['AAST_ROOT_PATH'] = "http://localhost/~bluemac/aast";
                 </div>
 				<div class="clear-both"></div>
             </div>
-            <div id="footer"></div>
+            
+            <div id="footer" class="rounded-bottom">
+            	<?php include('./commons/footer.php') ?>
+            </div>
         </div>
     </div>
 </body>

@@ -2,7 +2,7 @@
     <ul class="menu-list">
         <li class="menu-listItem"><a href="./about" title="About">ABOUT</a>
             <ul class="sub-list">
-                <li class="sub-listItem"><a href="./mission.html">Mission</a></li>
+                <li class="sub-listItem"><a href="./index.php?page=mission">Mission</a></li>
                 <li class="sub-listItem"><a href="./welcome.html">Director's Welcome</a></li>
                 <li class="sub-listItem"><a href="./history.html">Program History</a></li>
                 <li class="sub-listItem"><a href="./faculty.html">Faculty and Staff</a></li>

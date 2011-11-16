@@ -38,4 +38,14 @@ $("a.collapse").click(function(){
 	return false;
 });
 
-						   });
+
+
+//When side menu item is clicked					   
+$(".side-menu-items ul li a").click(function(){
+	$(".side-menu-items ul li").removeClass('active-side-menu');
+	$(this).parent().addClass('active-side-menu');
+	return false;
+	});
+
+
+ });
