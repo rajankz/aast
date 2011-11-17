@@ -44,8 +44,22 @@ $("a.collapse").click(function(){
 $(".side-menu-items ul li a").click(function(){
 	$(".side-menu-items ul li").removeClass('active-side-menu');
 	$(this).parent().addClass('active-side-menu');
-	return false;
+	var linkName = $(this).attr('name');
+
+	//$("#page-content").fadeOut();
+	$("#page-content").value="";
+	$("#page-content").load(linkName +".html");
+	$("#page-content").fadeIn();
+	/*
+	$("#page-content").fadeOut('slow', function(){
+		$(this).load(linkName +".html"), function(){
+			$(this).fadeIn('slow', function(){
+			});
+		});
 	});
+	*/
+	return false;
+});
 
 
  });

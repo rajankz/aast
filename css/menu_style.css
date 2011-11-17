@@ -1,3 +1,5 @@
+
+
 #aast-menu{
     background-color: #880000;
 }
@@ -6,8 +8,6 @@
     background-color: #880000;
     margin:auto;
 	padding:0px;
-	font-family: Tahoma, "Lucida Grande", Verdana, "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", Helvetica, sans-serif;
-    font-family: 'Museo','Museo500','Helvetica Neue','HelveticaNeue','Helvetica',Arial;
 	font-size:12px;
 	font-weight:normal;
     clear: both;
@@ -52,7 +52,8 @@
 	text-align:center;
 	text-decoration:none;
     border-top: 2px solid #880000;
-	font-family: Helvetica, Arial, sans-serif;
+	/*font-family: Helvetica, Arial, sans-serif;*/
+	font-family:'Museo-500','MuseoSans500';
 }
 
 .menu li.menu-listItem a:hover, .menu ul.menu-list li.menu-listItem:hover a
@@ -172,10 +173,9 @@ ul.MenuBarHorizontal iframe
 /* Navigation : top black navbar
 -------------------------------------------------------------- */
 #navcontainer-one { 
-    font-family: Georgia, Verdana, Cantarell, Ariel, Tahoma;
-   	font-family: Ariel, Tahoma, Verdana, "Helvetica Neue", Helvetica, Geneva, sans-serif;
 	padding: 6px 0 4px 10px; 
     float: right;
+    font-family:'Museo-500','MuseoSans500';
 }	
 ul#navbar-one {
 	text-align: right; 
@@ -196,6 +196,7 @@ ul#navbar-one {
     background: none repeat scroll 0 0 transparent;
     outline: 0 none;
     text-shadow: 0px 1px 3px rgba(255,150,150,0.3);  
+    font-family:'Museo-500','MuseoSans500';
 }		
 #navbar-one a:hover {
     

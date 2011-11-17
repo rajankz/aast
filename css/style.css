@@ -46,6 +46,7 @@ table td h4{font-family: Arial, Helvetica, sans-serif;}
     font-size: 18px;
 	font-weight: normal;
 	font-family: Helvetica, Arial, Clean, Sans-serif;
+	font-family:'MuseoSans500';
 }
 .section-header strong{font-weight: bolder;}
 .section-header-black{background: #000000 url(images/ui-bg_highlight-soft_15_000000_1x100.png) 50% 50% repeat-x;color: #fefefe;}

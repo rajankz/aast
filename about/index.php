@@ -86,6 +86,7 @@ $GLOBALS['selected-menu'] = "about";
 				<div class="left-module">
 				<?php include('about-menu.php') ?></div>
 				<div class="right-module">
+					<div id="page-content"></div>
 					<?php include('about-content.php') ?>
 				</div>
 
