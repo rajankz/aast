@@ -1,13 +1,17 @@
+<!DOCTYPE html >
+<?php
+$rootPath = $GLOBALS['AAST_ROOT_PATH'];
+?>
 <div class="menu">
     <ul class="menu-list">
-        <li class="menu-listItem"><a href="./about" title="About">ABOUT</a>
+        <li class="menu-listItem"><a href=<?=$rootPath . "/about"?> title="About">ABOUT</a>
             <ul class="sub-list">
-                <li class="sub-listItem"><a href="./about#mission">Mission</a></li>
-                <li class="sub-listItem"><a href="./welcome.html">Director's Welcome</a></li>
-                <li class="sub-listItem"><a href="./history.html">Program History</a></li>
-                <li class="sub-listItem"><a href="./faculty.html">Faculty and Staff</a></li>
-                <li class="sub-listItem"><a href="./alumni.html">Alumni</a></li>
-                <li class="sub-listItem"><a href="./directions.html">Maps and Directions</a></li>
+                <li class="sub-listItem"><a href=<?=$rootPath . "/about#mission" ?> >Mission</a></li>
+                <li class="sub-listItem"><a href=<?=$rootPath . "/about#welcome.html"?> >Director's Welcome</a></li>
+                <li class="sub-listItem"><a href=<?=$rootPath . "/history.html"?> >Program History</a></li>
+                <li class="sub-listItem"><a href=<?=$rootPath . "/faculty.html"?> >Faculty and Staff</a></li>
+                <li class="sub-listItem"><a href=<?=$rootPath . "/alumni.html"?> >Alumni</a></li>
+                <li class="sub-listItem"><a href=<?=$rootPath . "/directions.html"?> >Maps and Directions</a></li>
             </ul>
         </li>
 
@@ -55,7 +59,6 @@
                 <li class="sub-listItem"><a href="./sitemap.html">SiteMap</a></li>
             </ul>
         </li>
-        <!-- <li><?//php include './commons/search-box.php' ?></li> -->
     </ul>
     <span></span>
 </div>
