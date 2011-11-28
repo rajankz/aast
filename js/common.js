@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 $(".main_image .desc").show(); //Show Banner
 $(".main_image .block").animate({ opacity: 0.9 }, 1 ); //Set Opacity
@@ -40,26 +42,35 @@ $("a.collapse").click(function(){
 
 
 
-//When side menu item is clicked					   
-$(".side-menu-items ul li a").click(function(){
-	$(".side-menu-items ul li").removeClass('active-side-menu');
-	$(this).parent().addClass('active-side-menu');
-	var linkName = $(this).attr('name');
+$.fn.replacePageContent = ReplacePageContent;
 
-	//$("#page-content").fadeOut();
-	$("#page-content").value="";
-	$("#page-content").load(linkName +".html");
-	$("#page-content").fadeIn();
-	/*
-	$("#page-content").fadeOut('slow', function(){
-		$(this).load(linkName +".html"), function(){
-			$(this).fadeIn('slow', function(){
-			});
-		});
-	});
-	*/
+$('.sub-listItem a').click(function(){
+	$('.side-menu-items ul li').removeClass('active-side-menu');
+	var linkName = $(this).attr('name');
+	$('.side-menu-items ul li a[name='+linkName+']').parent().addClass('active-side-menu');
+	//$(this).replacePageContent(this);
+	return true;
+});
+
+//main navigation menu item clicked
+$('.menu ul.menu-list li.menu-listItem a').click(function(){
+	$(this).replacePageContent(this);
 	return false;
 });
 
+//When items from side menu item is clicked					   
+$(".side-menu-items ul li a").click(function(){
+	$(".side-menu-items ul li").removeClass('active-side-menu');
+	$(this).parent().addClass('active-side-menu');
+	$(this).replacePageContent(this);
+	return false;
+});
 
  });
+ 
+ function ReplacePageContent(){
+	var linkName = $(this).attr('name');
+	$('#page-content').innerHTML="";
+	$('#page-content').load(linkName +".html");
+	$('#page-content').fadeIn();
+}

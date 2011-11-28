@@ -2,16 +2,17 @@
 <?php
 $rootPath = $GLOBALS['AAST_ROOT_PATH'];
 ?>
+
 <div class="menu">
     <ul class="menu-list">
-        <li class="menu-listItem"><a href=<?=$rootPath . "/about"?> title="About">ABOUT</a>
+        <li class="menu-listItem"><a name="about" href=<?=$rootPath . "/about?p=about"?> title="About">ABOUT</a>
             <ul class="sub-list">
-                <li class="sub-listItem"><a href=<?=$rootPath . "/about#mission" ?> >Mission</a></li>
-                <li class="sub-listItem"><a href=<?=$rootPath . "/about#welcome.html"?> >Director's Welcome</a></li>
-                <li class="sub-listItem"><a href=<?=$rootPath . "/history.html"?> >Program History</a></li>
-                <li class="sub-listItem"><a href=<?=$rootPath . "/faculty.html"?> >Faculty and Staff</a></li>
-                <li class="sub-listItem"><a href=<?=$rootPath . "/alumni.html"?> >Alumni</a></li>
-                <li class="sub-listItem"><a href=<?=$rootPath . "/directions.html"?> >Maps and Directions</a></li>
+                <li class="sub-listItem"><a name="mission" href=<?=$rootPath . "/about?p=mission" ?> >Mission</a></li>
+                <li class="sub-listItem"><a name="welcome" href=<?=$rootPath . "/about?p=welcome"?> >Director's Welcome</a></li>
+                <li class="sub-listItem"><a name="history" href=<?=$rootPath . "/about?p=history"?> >Program History</a></li>
+                <li class="sub-listItem"><a name="faculty" href=<?=$rootPath . "/about?p=faculty"?> >Faculty and Staff</a></li>
+                <li class="sub-listItem"><a name="alumni" href=<?=$rootPath . "/about?p=alumni"?> >Alumni</a></li>
+                <li class="sub-listItem"><a name="maps" href=<?=$rootPath . "/about?p=directions"?> >Maps and Directions</a></li>
             </ul>
         </li>
 
@@ -62,3 +63,4 @@ $rootPath = $GLOBALS['AAST_ROOT_PATH'];
     </ul>
     <span></span>
 </div>
+

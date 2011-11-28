@@ -1,4 +1,4 @@
-*{margin:0; padding:0; border:none;}
+*{margin:0; padding:0; border:none;position:relative;}
 body, div, span, h1, h2, h3, h4, h5, h6, ul, li, form, fieldset{margin: auto; text-align: justify;color:#626262;}
 h1, h2, h3, h4, h5, h6{font-family: Helvetica, Arial, sans-serif;display:block;}
 h2{font-size: 1.5em; margin: .75em 0; font-family:Helvetica;}
@@ -81,7 +81,8 @@ table td h4{font-family: Arial, Helvetica, sans-serif;}
 #aast-banner img{border-top-left-radius: 3px; border-top-right-radius: 3px; -o-border-top-left-radius: 3px;-o-border-top-right-radius: 3px;}
 
 #content{background-color: rgb(230,230,230); 
-background-image: url('images/ui-bg_fine-grain_15_fefefe_60x60.png');z-index:-1;
+/*background-image: url('images/ui-bg_fine-grain_15_fefefe_60x60.png');z-index:-1;
+*/background-color:#f5f6f7;
 padding-bottom:10px;
 min-height:500px;
 }
@@ -138,10 +139,12 @@ table#hot-topics .highlight-image{text-align: center;vertical-align: top;}
 #footer{
 padding:10px;
 height:55px;
-background-image: url('images/ui-bg_fine-grain_50_666666_60x60.png');z-index:-1;
+background-image: url('images/ui-bg_fine-grain_50_666666_60x60.png');
+z-index:2;
 background-color: #666;
 color:#efefef;
 margin-bottom:20px;
+position:relative;
 }
 #footer p{color:#efefef;}
 
@@ -230,13 +233,16 @@ table#events-table td .event-month{ font-size:0.9em; color: #4c4c4c; width: 40px
 
 .breadCrumbs{height:15px; font-size:11px; padding-top:3px;}
 
-.left-module{float:left;width:220px;padding:18px;padding-top:30px;line-height:21px;background-color:#E6F1F6; display:block;}
+.left-module{float:left;width:220px;padding:18px;padding-top:30px;line-heigt:21px;background-color:#E6F1F6; display:block;min-height:500px;z-index:1;position:relative;}
+
 .left-module h2{font-family: helvetica, arial, sans-serif; font-size: 32px; line-height:40px;}
 .left-module ul{list-style: none;}
 
 .right-module{margin:10px;padding:10px;padding-top:0;background: url(media/images/commons/content_bg2.gif repeat-x);
 /*border: 1px solid #cecece;*/
-float:right;width:660px;}
+float:right;width:660px;
+
+}
 
 .centered{text-align:center}
 .side-menu-title{text-align:center;font-size:24px;line-height:33px;font-family:Helvetica,Arial,sans-serif;padding-top:3px;padding-bottom:3px;color:#efefef;background-color:#404039;}

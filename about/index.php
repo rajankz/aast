@@ -82,12 +82,15 @@ $GLOBALS['selected-menu'] = "about";
             </div>
 			
             <div id="content" class="shadow">
-				<div><?php //include('../backlinks.php') ?></div>
 				<div class="left-module">
-				<?php include('about-menu.php') ?></div>
+					<?php include('about-menu.php') ?>
+				</div>
+				
 				<div class="right-module">
-					<div id="page-content"></div>
-					<?php include('about-content.php') ?>
+					<div id="page-content">
+
+						
+					</div>
 				</div>
 
             </div>
