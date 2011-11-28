@@ -35,12 +35,12 @@
 	padding:0;
 }
 
-.menu li.menu-listItem{
+.menu li{
 	float:left;
 	padding:0px;
     width:auto;
 }
-.menu li.menu-listItem a{
+.menu li a.menu-listItem{
     background:#880000;
     width:auto;
     color: #f7f7f7;
@@ -56,7 +56,7 @@
 	font-family:'Museo-500','MuseoSans500';
 }
 
-.menu li.menu-listItem a:hover, .menu ul.menu-list li.menu-listItem:hover a
+.menu li a.menu-listItem:hover, .menu li:hover a.menu-listItem
 {
 	background-color: #ffffff;
 	color:#880000;
@@ -64,7 +64,7 @@
     border-top: 2px solid orange;
 }
 
-.menu li.menu-listItem ul.sub-list
+.menu ul.sub-list
 {
 	background:#fff;
     display:none;
@@ -88,7 +88,7 @@
 	text-decoration:none;
 }
 
-.menu li.menu-listItem:hover ul.sub-list
+.menu li:hover ul.sub-list
 {
 	display:block;
     padding:5px;
@@ -96,7 +96,7 @@
     border-right: 2px solid #ccc;
 }
     
-.menu li.menu-listItem li.sub-listItem
+.menu li li.sub-listItem
 {
     color: #000;
 	display:block;
@@ -105,13 +105,13 @@
 	padding:0px;
 	width:225px;
 }
-.menu li.menu-listItem:hover li.sub-listItem a
+.menu li:hover li.sub-listItem a
 {
 	background:none;
     border-top: 1px dotted #CCC;
 }
     
-   	.menu li.menu-listItem ul.sub-list a
+   	.menu li ul.sub-list a
     {
 		display:block;
 		height:30px;
@@ -122,7 +122,7 @@
 		text-align:left;
         border: 1px solid #fff;
 	}
-	.menu li.menu-listItem ul.sub-list a:hover, .menu li.menu-list ul.sub-list li.sub-listItem:hover a
+	.menu li ul.sub-list a:hover, .menu li.menu-list ul.sub-list li.sub-listItem:hover a
     {
 		background:#880000;
         border: none;

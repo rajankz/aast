@@ -88,8 +88,8 @@ $GLOBALS['selected-menu'] = "about";
 				
 				<div class="right-module">
 					<div id="page-content">
-
-						
+						<script type="text/javascript">loadPageContent();
+						</script>
 					</div>
 				</div>
 

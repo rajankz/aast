@@ -48,14 +48,14 @@ $('.sub-listItem a').click(function(){
 	$('.side-menu-items ul li').removeClass('active-side-menu');
 	var linkName = $(this).attr('name');
 	$('.side-menu-items ul li a[name='+linkName+']').parent().addClass('active-side-menu');
-	//$(this).replacePageContent(this);
+	$(this).replacePageContent(this);
 	return true;
 });
 
 //main navigation menu item clicked
-$('.menu ul.menu-list li.menu-listItem a').click(function(){
+$('a.menu-listItem').click(function(){
 	$(this).replacePageContent(this);
-	return false;
+	//return true;
 });
 
 //When items from side menu item is clicked					   
@@ -73,4 +73,9 @@ $(".side-menu-items ul li a").click(function(){
 	$('#page-content').innerHTML="";
 	$('#page-content').load(linkName +".html");
 	$('#page-content').fadeIn();
+}
+
+function loadPageContent(){
+	var pathname = window.location;
+	//alert(pathname);
 }

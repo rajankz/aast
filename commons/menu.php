@@ -5,7 +5,7 @@ $rootPath = $GLOBALS['AAST_ROOT_PATH'];
 
 <div class="menu">
     <ul class="menu-list">
-        <li class="menu-listItem"><a name="about" href=<?=$rootPath . "/about?p=about"?> title="About">ABOUT</a>
+        <li><a class="menu-listItem" name="about" href=<?=$rootPath . "/about?p=about"?> title="About">ABOUT</a>
             <ul class="sub-list">
                 <li class="sub-listItem"><a name="mission" href=<?=$rootPath . "/about?p=mission" ?> >Mission</a></li>
                 <li class="sub-listItem"><a name="welcome" href=<?=$rootPath . "/about?p=welcome"?> >Director's Welcome</a></li>
@@ -17,7 +17,7 @@ $rootPath = $GLOBALS['AAST_ROOT_PATH'];
         </li>
 
 
-        <li class="menu-listItem"><a href="./undergraduate.html" title="Undergraduate">UNDERGRADUATE</a>
+        <li><a class="menu-listItem" href="./undergraduate.html" title="Undergraduate">UNDERGRADUATE</a>
             <ul class="sub-list">
                 <li class="sub-listItem"><a href="./minor.html">AAST Minor</a></li>
                 <li class="sub-listItem"><a href="./courses.html">Course Offerings</a></li>
@@ -27,7 +27,7 @@ $rootPath = $GLOBALS['AAST_ROOT_PATH'];
 
         </li>
 
-        <li class="menu-listItem"><a href="./research.html" title="Research">RESEARCH</a>
+        <li><a class="menu-listItem" href="./research.html" title="Research">RESEARCH</a>
 
             <ul class="sub-list">
                 <li class="sub-listItem"><a href="./apacic.html">APACIC</a></li>
@@ -38,7 +38,7 @@ $rootPath = $GLOBALS['AAST_ROOT_PATH'];
 
             </ul>
         </li>
-        <li class="menu-listItem"><a href="./programs.html" title="Programs">PROGRAMS</a>
+        <li><a class="menu-listItem" href="./programs.html" title="Programs">PROGRAMS</a>
             <ul class="sub-list">
 
                 <li class="sub-listItem"><a href="./lecture.html">Lecture Series</a></li>
@@ -49,10 +49,10 @@ $rootPath = $GLOBALS['AAST_ROOT_PATH'];
         </li>
 
 
-        <li class="menu-listItem"><a href="./events.html" title="News and Events">NEWS &amp; EVENTS</a></li>
-        <li class="menu-listItem"><a href="./multimedia.html" title="Multimedia">MULTIMEDIA</a></li>
+        <li><a class="menu-listItem" href="./events.html" title="News and Events">NEWS &amp; EVENTS</a></li>
+        <li><a class="menu-listItem" href="./multimedia.html" title="Multimedia">MULTIMEDIA</a></li>
 
-        <li class="menu-listItem"><a href="./about_us.html" title="Resources">RESOURCES</a>
+        <li><a class="menu-listItem" href="./about_us.html" title="Resources">RESOURCES</a>
             <ul class="sub-list">
                 <!--<li><a href="/apa_scholarships.html">APIA Scholarship</a></li>-->
                 <li class="sub-listItem"><a href="./faq.html">FAQ</a></li>
