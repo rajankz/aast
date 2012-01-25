@@ -2,8 +2,9 @@
 
 <?php
 $localpath = $GLOBALS['AAST_ROOT_PATH'];
+$localpath = "";
 $newsMainPath = $localpath . "/events.php";
-$xml = simplexml_load_file($localpath . "/xmls/news.xml");
+$xml = simplexml_load_file($localpath . "xmls/news.xml");
 
 $defaultImageThumb = "";
 $defaultImageThumb1 = "";

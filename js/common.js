@@ -42,40 +42,73 @@ $("a.collapse").click(function(){
 
 
 
-$.fn.replacePageContent = ReplacePageContent;
+	$.fn.replacePageContent = ReplacePageContent;
+	$.fn.loadPageContent = LoadPageContent;
+	
+	/*
+	$('.sub-listItem a').click(function(){
+		alert("sublist");
+		$('.side-menu-items ul li').removeClass('active-side-menu');
+		var linkName = $(this).attr('name');
+		$('.side-menu-items ul li a[name='+linkName+']').parent().addClass('active-side-menu');
+		$(this).replacePageContent($(this).attr('name'));
+		return false;
+	});
+	
+	//main navigation menu item clicked
+	$('a.menu-listItem').click(function(){
+		alert("mainList");
+		$(".side-menu-items ul li").removeClass('active-side-menu');
+		$(this).replacePageContent($(this).attr('name'));
+		return true;
+	});
+	
+	//When items from side menu item is clicked					   
+	$(".side-menu-items ul li a").click(function(){
+		alert("sideMenu");
+		$(".side-menu-items ul li").removeClass('active-side-menu');
+		$(this).parent().addClass('active-side-menu');
+		$(this).replacePageContent($(this).attr('name'));
+		return true;
+	});
+	*/
+	
+	$(document.getElementById('page-content')).ready(function() {
+		var path = $(this).loadPageContent();
+		$('.side-menu-items ul li').removeClass('active-side-menu');
+		$('.side-menu-items ul li a[name='+path+']').parent().addClass('active-side-menu');
+	});
 
-$('.sub-listItem a').click(function(){
-	$('.side-menu-items ul li').removeClass('active-side-menu');
-	var linkName = $(this).attr('name');
-	$('.side-menu-items ul li a[name='+linkName+']').parent().addClass('active-side-menu');
-	$(this).replacePageContent(this);
-	return true;
 });
-
-//main navigation menu item clicked
-$('a.menu-listItem').click(function(){
-	$(this).replacePageContent(this);
-	//return true;
-});
-
-//When items from side menu item is clicked					   
-$(".side-menu-items ul li a").click(function(){
-	$(".side-menu-items ul li").removeClass('active-side-menu');
-	$(this).parent().addClass('active-side-menu');
-	$(this).replacePageContent(this);
-	return false;
-});
-
- });
  
- function ReplacePageContent(){
+/* function ReplacePageContent(){
 	var linkName = $(this).attr('name');
 	$('#page-content').innerHTML="";
 	$('#page-content').load(linkName +".html");
 	$('#page-content').fadeIn();
 }
+*/
 
-function loadPageContent(){
-	var pathname = window.location;
-	//alert(pathname);
+function ReplacePageContent(linkName){
+	$('#page-content').innerHTML="";
+	$('#page-content').load(linkName +".html");
+	$('#page-content').fadeIn();
+}
+
+function LoadPageContent(){
+	var pageLink = window.location.search;
+	var path = window.location.pathname;
+	var index = path.indexOf("index.php");
+	if(index !=-1){
+		path = path.substring(0, index);
+		alert(path);
+	}
+	path = path.substring(0,path.length-1);
+	path = path.substring(path.lastIndexOf("/")+1);
+	if(pageLink != "")
+	{
+		path = pageLink.substring(3);
+	}
+	ReplacePageContent(path);
+	return path;
 }

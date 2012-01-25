@@ -10,11 +10,10 @@ if($_GET["page"]=="mission")
 <head>
 <title>Asian American Studies Program Home</title>
 
-<script src="./js/AC_RunActiveContent.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
-<script type="text/javascript" src="lib-external/nivo-slider/jquery.nivo.slider.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
 
 
 <script type="text/javascript">
@@ -46,12 +45,8 @@ if($_GET["page"]=="mission")
 <link rel="stylesheet" href="http://www.umd.edu/wrapper/css/xhtml-962px.css" />
 <link rel="stylesheet" href="css/menu_style.css" type="text/css" />
 <link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/slider.css" type="text/css" />
 <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" />
-
-<link rel="stylesheet" href="lib-external/nivo-slider/themes/default/default.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="lib-external/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
-
-
 
 <!-- Backward Compatability -->
 <!--[if lt IE 7]>
@@ -80,14 +75,9 @@ if($_GET["page"]=="mission")
                 <?php include './commons/menu.php' ?>
                 <div style="clear: both;"></div>
             </div>
+            <div id="content">
+                    <?php include './commons/image-slider.php' ?>
 			
-            <div id="content" class="shadow">
-                <div id="content-front-top">
-                    <?php include './commons/image-rotator.php' ?>
-					<?php include './commons/top-right.php' ?>
-					<div class="clear-both"></div>
-                </div>
-				<div class="clear-both"></div>				
                 <div id="content-left">
                     <?php include './commons/content-left.php' ?>
                 </div>                
@@ -96,10 +86,7 @@ if($_GET["page"]=="mission")
                 </div>
 				<div class="clear-both"></div>
             </div>
-            
-            <div id="footer" class="rounded-bottom">
-            	<?php include('./commons/footer.php') ?>
-            </div>
+            <?php include('./commons/footer.php') ?>
         </div>
     </div>
 </body>

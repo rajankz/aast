@@ -10,7 +10,7 @@ $rootPath = $GLOBALS['AAST_ROOT_PATH'];
                 <li class="sub-listItem"><a name="mission" href=<?=$rootPath . "/about?p=mission" ?> >Mission</a></li>
                 <li class="sub-listItem"><a name="welcome" href=<?=$rootPath . "/about?p=welcome"?> >Director's Welcome</a></li>
                 <li class="sub-listItem"><a name="history" href=<?=$rootPath . "/about?p=history"?> >Program History</a></li>
-                <li class="sub-listItem"><a name="faculty" href=<?=$rootPath . "/about?p=faculty"?> >Faculty and Staff</a></li>
+                <li class="sub-listItem"><a name="faculty" href=<?=$rootPath . "/about?p=faculty"?> >Faculty &amp; Staff</a></li>
                 <li class="sub-listItem"><a name="alumni" href=<?=$rootPath . "/about?p=alumni"?> >Alumni</a></li>
                 <li class="sub-listItem"><a name="maps" href=<?=$rootPath . "/about?p=directions"?> >Maps and Directions</a></li>
             </ul>

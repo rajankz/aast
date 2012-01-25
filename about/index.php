@@ -87,8 +87,9 @@ $GLOBALS['selected-menu'] = "about";
 				</div>
 				
 				<div class="right-module">
-					<div id="page-content">
-						<script type="text/javascript">loadPageContent();
+					<div id="page-content" onload=loadPageContent();>
+						<script type="text/javascript">
+//						loadPageContent();
 						</script>
 					</div>
 				</div>
