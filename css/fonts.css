@@ -1,11 +1,11 @@
-@font-face {font-family: 'Museo-500';src: url('../css/fonts/Museo-500/176B29_0.eot');src: url('../css/fonts/Museo-500/176B29_0.eot?#iefix') format('embedded-opentype'),url('../css/fonts/Museo-500/176B29_0.woff') format('woff'),url('../css/fonts/Museo-500/176B29_0.ttf') format('truetype');}
+@font-face {font-family: 'Museo500';src: url('../css/fonts/Museo500/176B29_0.eot');src: url('../css/fonts/Museo500/176B29_0.eot?#iefix') format('embedded-opentype'),url('../css/fonts/Museo500/176B29_0.woff') format('woff'),url('../css/fonts/Museo500/176B29_0.ttf') format('truetype');}
 
 @font-face {
-    font-family: 'MuseoSans_500';
-    src: url('../css/fonts/MuseoSans/MuseoSans_500.eot');
-    src: url('../css/fonts/MuseoSans/MuseoSans_500.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/MuseoSans/MuseoSans_500.ttf') format('truetype'),
-         url('../css/fonts/MuseoSans/MuseoSans_500.svg#MuseoSans_500') format('svg');
+    font-family: 'MuseoSans500';
+    src: url('../css/fonts/MuseoSans/MuseoSans500.eot');
+    src: url('../css/fonts/MuseoSans/MuseoSans500.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/MuseoSans/MuseoSans500.ttf') format('truetype'),
+         url('../css/fonts/MuseoSans/MuseoSans500.svg#MuseoSans_500') format('svg');
 }
 
 
