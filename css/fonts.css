@@ -2,10 +2,10 @@
 
 @font-face {
     font-family: 'MuseoSans500';
-    src: url('../css/fonts/MuseoSans/MuseoSans500.eot');
-    src: url('../css/fonts/MuseoSans/MuseoSans500.eot?#iefix') format('embedded-opentype'),
-         url('../css/fonts/MuseoSans/MuseoSans500.ttf') format('truetype'),
-         url('../css/fonts/MuseoSans/MuseoSans500.svg#MuseoSans_500') format('svg');
+    src: url('../css/fonts/MuseoSans500/MuseoSans500.eot');
+    src: url('../css/fonts/MuseoSans500/MuseoSans500.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/MuseoSans500/MuseoSans500.ttf') format('truetype'),
+         url('../css/fonts/MuseoSans500/MuseoSans500.svg#MuseoSans_500') format('svg');
 }
 
 
