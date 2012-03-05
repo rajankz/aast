@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="../css/style.css" type="text/css" />
+<script type="text/javascript">
+	function validateFormFill(){
+		var fieldsFilled=true;
+		if(fieldsFilled && document.getElementsByName['firstName'][0].value=="First Name *") fieldsFilled=false;
+		if(fieldsFilled && document.getElementsByName['lastName'][0].value=="Last Name *") fieldsFilled=false;
+		if(fieldsFilled && document.getElementsByName['organization'][0].value=="Organization *") fieldsFilled=false;
+		if(fieldsFilled && document.getElementsByName['email'][0].value=="E-mail *") fieldsFilled=false;
+			
+		return false;
+	}
+</script>
+<div id="single-content">
+	<h2>AAST Contact/Enquiry Form</h2>
+	<br />
+	<p>Please fill out the form to help us understand your query better.</p>
+	<div id="errorMessage">
+		<p>Please enter all fields marked with *</p><br />
+	</div>
+	<p>
+	<form name="enquiryForm" action="abc.php">
+		<input type="text" size="20" name="firstName" value="First Name *" onblur="if(this.value=='')this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue)this.value=''">
+		<input type="text" size="20" name="lastName" value="Last Name *" onblur="if(this.value=='')this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue)this.value=''">
+		<br /><br />
+		<input type="text" size="30" name="uid" value="University ID *" onblur="if(this.value=='')this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue)this.value=''">
+		<br /><br />
+		<input type="text" size="30" name="email" value="E-mail *" onblur="if(this.value=='')this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue)this.value=''">
+		<br /><br />
+		<select id="enquiryPurpose" name="enquiryPurpose" style="width:15em">
+			<option selected="selected" value="">Purpose of Enquiry </option>
+			<option value="minor">Minor</option>
+			<option value="classes">Classes</option>
+			<option value="grades">Grades</option>
+		</select>
+		<br /><br />
+		<textarea rows="4" cols="41" name="message" onblur="if(this.value=='')this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue)this.value=''">Type your message here</textarea>
+		<br /><br />
+		<label><input type="checkbox" name="aastClasses"> Yes, I have taken AAST classes before.</label>
+		<br /><br />
+		<input class="button" type="submit" name="submit" value="Send Form" onclick="return validateFormFill()" />
+		
+	</form>
+</div>

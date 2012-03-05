@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AllItems>
+	<OneItem>
+		<NewsItem>
+			<onHomePage>yes</onHomePage>
+			<title>CSSA hosts Chinese Cultural Festival - 25 September</title>
+			<name>chinese-cultural-event</name>
+			<postingDate>09/21/2011</postingDate>
+			<highlight>
+				The Chinese Student and Scholar Associations of the D.C. metropolitan area are holding their Chinese Culture Festival this Sunday, Sept. 25.
+			</highlight>
+		</NewsItem>
+	</OneItem>
+	<OneItem>
+		<NewsItem>
+			<onHomePage>yes</onHomePage>
+			<title>CSSA hosts Chinese Cultural Festival - 25 September</title>
+			<name>chinese-cultural-event</name>
+			<postingDate>09/21/2011</postingDate>
+			<highlight>
+				The Chinese Student and Scholar Associations of the D.C. metropolitan area are holding their Chinese Culture Festival this Sunday, Sept. 25.
+			</highlight>
+		</NewsItem>
+	</OneItem>
+	<OneItem>
+		<NewsItem>
+			<onHomePage>yes</onHomePage>
+			<title>CSSA hosts Chinese Cultural Festival - 25 September</title>
+			<name>chinese-cultural-event</name>
+			<postingDate>07/21/2011</postingDate>
+			<highlight>
+				The Chinese Student and Scholar Associations of the D.C. metropolitan area are holding their Chinese Culture Festival this Sunday, Sept. 25.
+			</highlight>
+		</NewsItem>
+	</OneItem>
+	<OneItem>
+		<OneEvent>
+			<onHomePage>yes</onHomePage>
+			<title>Event one next month and this month we try the next month event for fun</title>
+			<name>event1</name>
+			<eventDate>10/23/2012</eventDate>
+			<postingDate>07/28/2012</postingDate>
+		</OneEvent>
+	</OneItem>
+</AllItems>

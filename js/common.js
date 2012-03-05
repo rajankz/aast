@@ -43,68 +43,98 @@ $("a.collapse").click(function(){
 
 
 	$.fn.replacePageContent = ReplacePageContent;
-	$.fn.loadPageContent = LoadPageContent;
-	
-	/*
-	$('.sub-listItem a').click(function(){
-		alert("sublist");
-		$('.side-menu-items ul li').removeClass('active-side-menu');
-		var linkName = $(this).attr('name');
-		$('.side-menu-items ul li a[name='+linkName+']').parent().addClass('active-side-menu');
-		$(this).replacePageContent($(this).attr('name'));
-		return false;
-	});
-	
-	//main navigation menu item clicked
-	$('a.menu-listItem').click(function(){
-		alert("mainList");
-		$(".side-menu-items ul li").removeClass('active-side-menu');
-		$(this).replacePageContent($(this).attr('name'));
-		return true;
-	});
-	
-	//When items from side menu item is clicked					   
-	$(".side-menu-items ul li a").click(function(){
-		alert("sideMenu");
-		$(".side-menu-items ul li").removeClass('active-side-menu');
-		$(this).parent().addClass('active-side-menu');
-		$(this).replacePageContent($(this).attr('name'));
-		return true;
-	});
-	*/
+	//$.fn.loadPageContent = LoadPageContent;
+
 	
 	$(document.getElementById('page-content')).ready(function() {
-		var path = $(this).loadPageContent();
-		$('.side-menu-items ul li').removeClass('active-side-menu');
-		$('.side-menu-items ul li a[name='+path+']').parent().addClass('active-side-menu');
+		//var path = $(this).loadPageContent();
+		//$('.side-menu-items ul li').removeClass('active-side-menu');
+		//$('.side-menu-items ul li a[name='+path+']').parent().addClass('active-side-menu');
+		
+	var linkName = document.getElementById("pageContentLink").value;
+	var pageExt = document.getElementById("pageExt").value;
+	
+	if(pageExt=="")
+		pageExt="html";
+
+	//if no linkname then get the foldername
+	/*
+	if(linkName==""){
+		var linkName = window.location.pathname;
+		var index = linkName.indexOf("/index.php");
+		if(index !=-1){
+			linkName = linkName.substring(0, index);
+			linkName = linkName.substring(linkName.lastIndexOf("/")+1);
+		}
+	}*/
+	$('#page-content').innerHTML="";
+	
+	/*$('#page-content').load(linkName +".html", function(response,status,xhr){
+		if(status=="error"){
+			$('#page-content').load(linkName+".php");
+		}
+	});*/
+	$('#page-content').load(linkName +"." +pageExt);
+	$('#page-content').fadeIn();
+	
+	$('.side-menu-items ul li').removeClass('active-side-menu');
+	$('.side-menu-items ul li a[name='+linkName+']').parent().addClass('active-side-menu');
+		
 	});
 
 });
- 
-/* function ReplacePageContent(){
-	var linkName = $(this).attr('name');
-	$('#page-content').innerHTML="";
-	$('#page-content').load(linkName +".html");
-	$('#page-content').fadeIn();
-}
-*/
 
 function ReplacePageContent(linkName){
 	$('#page-content').innerHTML="";
-	$('#page-content').load(linkName +".html");
+	$('#page-content').load(linkName +".html", function(response,status,xhr){
+		if(status=="error"){
+			$('#page-content').load(linkName+".php");
+		}
+	});
 	$('#page-content').fadeIn();
+	
+	$('.side-menu-items ul li').removeClass('active-side-menu');
+	$('.side-menu-items ul li a[name='+linkName+']').parent().addClass('active-side-menu');
+	
 }
-
+/*
 function LoadPageContent(){
 	var pageLink = window.location.search;
 	var path = window.location.pathname;
 	var index = path.indexOf("index.php");
 	if(index !=-1){
 		path = path.substring(0, index);
-		alert(path);
 	}
-	path = path.substring(0,path.length-1);
-	path = path.substring(path.lastIndexOf("/")+1);
+	if(path.substring(path.length-1)=="/")
+		path = path.substring(0,path.lastIndexOf("/"));
+	if(pageLink != "")
+	{
+		var pageName=pageLink.substring(pageLink.indexOf("p="));
+		if(pageName != ""){
+			pageName=(pageName.indexOf("&")!=-1)?pageName.substring(0,pageName.indexOf("&")):pageName;
+			pageName=pageName.substring(2);
+			path = pageName;
+		}
+	}
+	ReplacePageContent(path);
+	return path;
+}
+/*
+function LoadPageContent(){
+	var pageLink = window.location.search;
+
+	var locationObj = window.location;
+	var locationObjStr = locationObj.toString();
+	var index = locationObjStr.indexOf("index.php");
+	if(index !=-1){
+		locationObjStr = locationObjStr.substring(0, index);
+	}
+	if(locationObjStr.substring(locationObjStr.length-1)=="/")
+		locationObjStr=locationObjStr.substring(0,locationObjStr.length-1);
+	window.location="";
+	window.location=locationObjStr+pageLink;
+	
+	var path = locationObjStr.substring(locationObjStr.lastIndexOf("/")+1);
 	if(pageLink != "")
 	{
 		path = pageLink.substring(3);
@@ -112,3 +142,4 @@ function LoadPageContent(){
 	ReplacePageContent(path);
 	return path;
 }
+*/

@@ -1,0 +1,2 @@
+---Google Calendar ---
+<a href="http://www.google.com/calendar/event?action=TEMPLATE&text=%5BWHAT%5D&dates=20110101T050000Z/20110101T050000Z&details=%5BDESCRIPTION%5D&location=%5BWHERE%5D&trp=true&sprop=%5BWEBSITE%20ADDRESS%5D&sprop=name:%5BWEBSITE%20NAME%5D" target="_blank"><img src="//www.google.com/calendar/images/ext/gc_button1.gif" alt="0" border="0"></a>

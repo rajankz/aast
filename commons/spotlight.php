@@ -1,5 +1,5 @@
 <div id="spotlight" class="individual-content">
-	<div class="section-header section-header-gold rounded-corners">RESEARCH <strong>SPOTLIGHT</strong></div>
+	<div class="section-header section-header-red rounded-corners">RESEARCH <strong>SPOTLIGHT</strong></div>
 	<div class="section-content">
 		<table>
 			<tr><td colspan="2"><div class="section-title"><a href="#">A Portrait of Japanese Americans</a></div></td></tr>

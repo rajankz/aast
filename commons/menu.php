@@ -1,66 +1,52 @@
 <!DOCTYPE html >
 <?php
-$rootPath = $GLOBALS['AAST_ROOT_PATH'];
+$rootPath = $GLOBALS['AAST_HOME'];
+$xml = simplexml_load_file($rootPath . "/xmls/menu.xml");
 ?>
 
 <div class="menu">
-    <ul class="menu-list">
-        <li><a class="menu-listItem" name="about" href=<?=$rootPath . "/about?p=about"?> title="About">ABOUT</a>
-            <ul class="sub-list">
-                <li class="sub-listItem"><a name="mission" href=<?=$rootPath . "/about?p=mission" ?> >Mission</a></li>
-                <li class="sub-listItem"><a name="welcome" href=<?=$rootPath . "/about?p=welcome"?> >Director's Welcome</a></li>
-                <li class="sub-listItem"><a name="history" href=<?=$rootPath . "/about?p=history"?> >Program History</a></li>
-                <li class="sub-listItem"><a name="faculty" href=<?=$rootPath . "/about?p=faculty"?> >Faculty &amp; Staff</a></li>
-                <li class="sub-listItem"><a name="alumni" href=<?=$rootPath . "/about?p=alumni"?> >Alumni</a></li>
-                <li class="sub-listItem"><a name="maps" href=<?=$rootPath . "/about?p=directions"?> >Maps and Directions</a></li>
-            </ul>
-        </li>
+	<ul class="menu-list">
+	<?php
+	foreach($xml->children() as $menuListItems){	
+		foreach($menuListItems->attributes() as $menuListAttribKey => $menuListAttribValue){
+			if($menuListAttribKey=='name')
+				$menuListItem=$menuListAttribValue;
+			if($menuListAttribKey=='title')
+				$title=$menuListAttribValue;	
+		}
+		?>
+		<li><!-- <a class="menu-listItem" href=<?= $rootPath . '/'. $menuListItem . '/index.php?p=' . $menuListItem?> name=<?=$title?> > <?= $title?></a> -->
+		<a class="menu-listItem" href=<?= $rootPath . '/'. $menuListItem ?> name=<?=$title?> > <?= $title?></a>
+			<ul class="sub-list">
+			<?php
+			foreach($menuListItems->children() as $subListItems){
+				foreach($subListItems->attributes() as $subListAttribKey => $subListAttribValue){
+					if($subListAttribKey=='name')
+						$subListItem=$subListAttribValue;
+					if($subListAttribKey=='title')
+						$title=$subListAttribValue;	
+				}
+			?>
+				<li class="sub-listItem"><a name=<?=$subListItem?> href=<?= $rootPath . "/".$menuListItem."/index.php?p=".$subListItem?> title=<?=$title?>><?=$title?></a></li>
+			<?php
+			}
+			?>
+			</ul>  <!-- sub-list -->
+		</li> <!-- menu-listItem -->
+	<?php
+	}
+	?>
+	</ul> <!-- menu-list -->
+	<div id="aastSearch">
+        <form method="get" action="http://www.searchum.umd.edu/search">
+			<input type="hidden" name="site" value="UMCP"/>
+			<input type="hidden" name="as_oq" value="site:aast.umd.edu" />
+			<input type="hidden" name="client" value="UMCP"/>
+			<input type="hidden" name="proxystylesheet" value="UMCP"/>
+			<input type="hidden" name="output" value="xml_no_dtd"/>
+			<input id="search" type="text" name="q" size="45" class="text" value="Search Asian American Studies"  onblur="if(this.value=='')this.value=this.defaultValue" onfocus="if(this.value==this.defaultValue)this.value=''"/>
 
-
-        <li><a class="menu-listItem" href="./undergraduate.html" title="Undergraduate">UNDERGRADUATE</a>
-            <ul class="sub-list">
-                <li class="sub-listItem"><a href="./minor.html">AAST Minor</a></li>
-                <li class="sub-listItem"><a href="./courses.html">Course Offerings</a></li>
-                <li class="sub-listItem"><a href="./experiential_learning.html">Experiential Learning</a></li>
-                <li class="sub-listItem"><a href="./independent_study.html">Independent Research</a></li>
-            </ul>
-
-        </li>
-
-        <li><a class="menu-listItem" href="./research.html" title="Research">RESEARCH</a>
-
-            <ul class="sub-list">
-                <li class="sub-listItem"><a href="./apacic.html">APACIC</a></li>
-                <li class="sub-listItem"><a href="./chinese_americans.html">A Portrait of Chinese Americans</a></li>
-                <li class="sub-listItem"><a href="./new_profile_chinese_americans.html">New Profile of Chinese Americans</a></li>
-                <li class="sub-listItem"><a href="./scholarshipdirectory.html">Scholarship Directory</a></li>
-                <li class="sub-listItem"><a href="./aalr.php">AA Literary Review</a></li>
-
-            </ul>
-        </li>
-        <li><a class="menu-listItem" href="./programs.html" title="Programs">PROGRAMS</a>
-            <ul class="sub-list">
-
-                <li class="sub-listItem"><a href="./lecture.html">Lecture Series</a></li>
-                <li class="sub-listItem"><a href="./census.html">Census 2010</a></li>
-                <li class="sub-listItem"><a href="./quickresources.html">AAST Resource Center</a></li>
-                <li class="sub-listItem"><a href="./scholarships.html">AAST Scholarships</a></li>
-            </ul>
-        </li>
-
-
-        <li><a class="menu-listItem" href="./events.html" title="News and Events">NEWS &amp; EVENTS</a></li>
-        <li><a class="menu-listItem" href="./multimedia.html" title="Multimedia">MULTIMEDIA</a></li>
-
-        <li><a class="menu-listItem" href="./about_us.html" title="Resources">RESOURCES</a>
-            <ul class="sub-list">
-                <!--<li><a href="/apa_scholarships.html">APIA Scholarship</a></li>-->
-                <li class="sub-listItem"><a href="./faq.html">FAQ</a></li>
-                <li class="sub-listItem"><a href="./partners.html">Partners</a></li>
-                <li class="sub-listItem"><a href="./sitemap.html">SiteMap</a></li>
-            </ul>
-        </li>
-    </ul>
-    <span></span>
+			<!-- <input type="image" class="button" src="http://www.umd.edu/wrapper/images/search.gif" alt="Search" /> -->
+		</form>
+	</div>
 </div>
-

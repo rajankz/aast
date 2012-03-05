@@ -2,8 +2,6 @@
 <div id="navcontainer-one">	
 	<ul id="navbar-one">
 		<li id="nav1-item"><a href="http://www.aast.umd.edu/" title="Home">Home</a></li>
-        <li id="nav1-item"><a href="http://aast.wordpress.com/" title="Blog">Blog</a></li>	
-        <li id="nav1-item"><a href="./donate.html" title="Donate">Donate</a></li>
 		<li id="nav1-item"><a href="./employment.html" title="Employment">Employment</a></li>			
 		<li id="nav1-item"><a href="./contact_us.html" title="Contact Us">Contact Us</a></li>
 	</ul>

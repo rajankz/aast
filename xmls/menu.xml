@@ -1,0 +1,35 @@
+<menu-list>
+	<menu-listItem name="about" title="About Us">
+		<sub-listItem name="directorsWelcome" title="Director's Welcome" />
+		<sub-listItem name="mission" title="Mission" />
+		<sub-listItem name="facultyStaff" title="Faculty &amp; Staff" />
+		<sub-listItem name="history" title="History" />
+		<sub-listItem name="faq" title="FAQ's" />
+		<sub-listItem name="contactUs" title="Contact Us" />
+	</menu-listItem>
+	<menu-listItem name="undergraduate" title="Undergraduate">	
+		<sub-listItem name="minorInAAST" title="Minor in AAST" />
+		<sub-listItem name="courseCatalog" title="Course Catalog" />
+	</menu-listItem>
+	<menu-listItem name="research" title="Research">
+		<sub-listItem name="apacic" title="About APACIC" />
+		<sub-listItem name="researchPublications" title="Research Publications" />
+	</menu-listItem>
+	<menu-listItem name="resources" title="Resources">
+		<sub-listItem name="resourceCenter" title="Resource Center" />
+		<sub-listItem name="lectureSeries" title="Lecture Series" />
+		<sub-listItem name="publications" title="Publications" />
+		<sub-listItem name="jobListing" title="Job Listing" />
+	</menu-listItem>
+	<menu-listItem name="aastScholarship" title="AAST Scholarship">
+		<sub-listItem name="applicationInformation" title=" Application Information" />
+		<sub-listItem name="scholarshipInformation" title="Scholarship Information" />
+		<sub-listItem name="previousRecipients" title="Previous Recipients" />
+	</menu-listItem>
+	<menu-listItem name="stayConnected" title="Stay Connected">
+		<sub-listItem name="allNewsAndEvents" title="News &amp; Events" />
+		<sub-listItem name="newsletter" title="Newsletter" />
+		<sub-listItem name="alumni" title="Alumni" />
+		<sub-listItem name="giveToAAST" title="Give To AAST" />
+	</menu-listItem>
+</menu-list>

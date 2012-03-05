@@ -1,0 +1,40 @@
+#sliderWrap {width:962px; margin:auto;float:left;background-image:url("../media/images/commons/bg-slider1.png");height:275px}
+
+#slideshow {float:left; width:962px; height:275px}
+#slideshow ul {position:absolute; list-style:none; top:2px; left:0px}
+#slideshow li {float:left; width:962px; height:275px}
+
+#slides {position:relative; width:962px; height:275px; list-style:none; overflow:auto}
+#slides li {width:962px; height:275px}
+
+
+
+#singleSlide {float:left; width:962px;margin:15px;margin-left:30px}
+#singleSlide img{float:left;border:3px solid #333333;
+-webkit-box-shadow: 0 0 2px #c2c1ba;
+-moz-box-shadow: 0 0 2px #c2c1ba;
+box-shadow: 0 0 2px #c2c1ba;
+}
+
+
+.sliderText{float:left;margin:5px 30px 5px 60px;width:350px;height:225px;color:#edeada;/*border:3px double #666;*/}
+.sliderText h2{text-align:center;font-weight:500;font-family:Helvetica, Arial;margin:10px auto;text-shadow:0px 1px 1px #c2c1ba;color:#edeada;padding-bottom:5px;}
+.sliderText hr{width:90%;display:block;height:1px;border-top:1px solid #999;border-bottom:1px solid #666;margin:auto;text-align:center;}
+.sliderText .desc{width:90%;font-size:13px;font-family:Arial;margin-top:20px;color:#E7E6E3;}
+
+.pagination {position:absolute; bottom:20px; left:400px; list-style:none; height:25px;z-index:999}
+.pagination li {float:left; cursor:pointer; height:10px; width:10px; background:#616161; margin:0 4px 0 0; border:1px solid #fff}
+.pagination li:hover, li.current {background:#fff}
+
+li#content {width:464px; height:270px; padding:15px 18px 15px 18px; background:#fff}
+#content h1 {font:22px Georgia,Verdana; margin-bottom:15px; color:#036}
+
+
+#sliderButtons{float:right;overflow:hidden;width:350px;height:40px;top:200px;text-align:center;}
+#sliderButtons ul{position:absolute;list-style:none;}
+#sliderButtons li{float:left;cursor:pointer;width:200px;height:35px;font-size:18px;background:#fff;text-align:center;line-height:35px;margin-left:13px;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);border-radius:3px;display:inline-block;box-shadow:0 0 2px #666;border:1px solid #999;}
+#sliderButtons li a{color:#f5f6f7;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); font-weight:500;}
+#sliderButtons li a:hover, #sliderButtons li a:visited, #sliderButtons li a:active{text-decoration:none;}
+#sliderButtons li.red{background-color:#990000}
+#sliderButtons li.gold{background-color:#cfb53b}
+#sliderButtons li.black{background-color:#111111}

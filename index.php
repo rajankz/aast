@@ -1,6 +1,15 @@
+<!--
+ _______                _                   ________                __                       _          __       
+|_   __ \              (_)                 |  __   _|              [  |                     (_)        [  |      
+  | |__) |   ,--.      __  ,--.   _ .--.   |_/  / /   ,--.   .---.  | |--.   ,--.   _ .--.  __   ,--.   | |--.   
+  |  __ /   `'_\ :    [  |`'_\ : [ `.-. |     .'.' _ `'_\ : / /'`\] | .-. | `'_\ : [ `/'`\][  | `'_\ :  | .-. |  
+ _| |  \ \_ // | |, _  | |// | |, | | | |   _/ /__/ |// | |,| \__.  | | | | // | |, | |     | | // | |, | | | |  
+|____| |___|\'-;__/[ \_| |\'-;__/[___||__] |________|\'-;__/'.___.'[___]|__]\'-;__/[___]   [___]\'-;__/[___]|__] 
+                    \____/                                                                                       
+-->
 <!DOCTYPE html >
 <?php
-$GLOBALS['AAST_ROOT_PATH'] = "http://localhost/~aast/aast";
+$GLOBALS['AAST_HOME'] = "http://localhost/~rajankz/aast";
 //$GLOBALS['AAST_ROOT_PATH'] = "rajanzachariah.com/aast";
 
 if($_GET["page"]=="mission")
@@ -13,11 +22,11 @@ if($_GET["page"]=="mission")
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/tinyfader.js"></script>
 
 
 <script type="text/javascript">
-
+/*
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-21508352-1']);
   _gaq.push(['_trackPageview']);
@@ -27,7 +36,7 @@ if($_GET["page"]=="mission")
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  
+*/
 
 </script>
 
@@ -45,7 +54,7 @@ if($_GET["page"]=="mission")
 <link rel="stylesheet" href="http://www.umd.edu/wrapper/css/xhtml-962px.css" />
 <link rel="stylesheet" href="css/menu_style.css" type="text/css" />
 <link rel="stylesheet" href="css/style.css" type="text/css" />
-<link rel="stylesheet" href="css/slider.css" type="text/css" />
+<link rel="stylesheet" href="css/fader.css" type="text/css" />
 <link rel="stylesheet" href="css/jquery-ui-1.8.16.custom.css" type="text/css" />
 
 <!-- Backward Compatability -->
@@ -73,6 +82,7 @@ if($_GET["page"]=="mission")
             </div>            
             <div id="aast-menu">
                 <?php include './commons/menu.php' ?>
+
                 <div style="clear: both;"></div>
             </div>
             <div id="content">
