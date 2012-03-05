@@ -1,4 +1,4 @@
 <?php
-$GLOBALS['page'] = $_GET['p'];
+$GLOBALS['page'] = 'stayConnected';
 include '../commons/master-page.php';
 ?>

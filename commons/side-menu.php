@@ -4,7 +4,6 @@ $section=substr($phpSelf,0, strrpos($phpSelf, '/'));
 $section=substr($section, strrpos($section, '/')+1);
 $rootPath = $GLOBALS['AAST_HOME'];
 $xml = simplexml_load_file($rootPath . "/xmls/menu.xml");
-$selected = $_GET['p'];
 
 $menuListItem=$section;
 
@@ -27,7 +26,7 @@ foreach($xml->children() as $menuListItems){
 
 ?>
 
-<div class="side-menu-title"><a name=<?=$title?> href=<?=$rootPath."/".$menuListItem."/index.php?p=".$menuListItem?>><?=$title?></a></div>
+<div class="side-menu-title"><a name=<?=$title?> href=<?=$rootPath."/".$menuListItem?>><?=$title?></a></div>
 <div class="side-menu-items">
 	<ul>
 	<?php
@@ -39,7 +38,7 @@ foreach($xml->children() as $menuListItems){
 				$title=$subListAttribValue;	
 		}
 	?>
-		<li><a name=<?=$subListItem?> href=<?=$rootPath."/".$menuListItem."/index.php?p=".$subListItem?>><?=$title?></a></li>
+		<li><a name=<?=$subListItem?> href=<?=$rootPath."/".$menuListItem."/".$subListItem.".php"?>><?=$title?></a></li>
 	<?php
 	}
 	?>

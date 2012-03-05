@@ -298,6 +298,10 @@ position:relative; top:230px; left:350px;height:13px;cursor:pointer;}
 
 hr{border-top:1px solid #888888}
 
+#single-content{
+	overflow:auto;
+}
+
 #single-content textarea, #single-content input[type="text"], #single-content input[type="password"], #single-content select {
     -moz-transition: all 0.15s ease-in-out 0s;
     background: none repeat scroll 0 0 #FCFCFC;

@@ -27,7 +27,7 @@
 		<sub-listItem name="previousRecipients" title="Previous Recipients" />
 	</menu-listItem>
 	<menu-listItem name="stayConnected" title="Stay Connected">
-		<sub-listItem name="allNewsAndEvents" title="News &amp; Events" />
+		<sub-listItem name="newsAndEvents" title="News &amp; Events" />
 		<sub-listItem name="newsletter" title="Newsletter" />
 		<sub-listItem name="alumni" title="Alumni" />
 		<sub-listItem name="giveToAAST" title="Give To AAST" />

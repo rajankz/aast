@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="../css/style.css" type="text/css" />
 <?php
 //todo: we need to remove the below line and be able to access AAST_HOME from anywhere
 $GLOBALS['AAST_HOME'] = "http://localhost/~rajankz/aast";
 $rootPath = $GLOBALS['AAST_HOME'];
-$newsMainPath = $rootPath . "/stayConnected/displayItem.php?id=";
+$newsMainPath = $rootPath . "/stayConnected/newsAndEvents.php?id=";
 
 	?>
 	<div id="single-content">

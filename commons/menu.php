@@ -27,7 +27,7 @@ $xml = simplexml_load_file($rootPath . "/xmls/menu.xml");
 						$title=$subListAttribValue;	
 				}
 			?>
-				<li class="sub-listItem"><a name=<?=$subListItem?> href=<?= $rootPath . "/".$menuListItem."/index.php?p=".$subListItem?> title=<?=$title?>><?=$title?></a></li>
+				<li class="sub-listItem"><a name=<?=$subListItem?> href=<?= $rootPath . "/".$menuListItem."/".$subListItem.".php" ?> title=<?=$title?>><?=$title?></a></li>
 			<?php
 			}
 			?>

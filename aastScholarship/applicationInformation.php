@@ -1,4 +1,4 @@
 <?php
-$GLOBALS['page']="undergraduate";
+$GLOBALS['page']="applicationInformation";
 include '../commons/master-page.php'
 ?>

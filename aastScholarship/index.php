@@ -1,5 +1,4 @@
 <?php
-$GLOBALS['selected-menu'] = "aastScholarship";
-$GLOBALS['page']=$_GET['p'];
+$GLOBALS['page']="aastScholarship";
 include '../commons/master-page.php'
 ?>
